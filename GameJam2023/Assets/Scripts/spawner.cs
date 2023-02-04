@@ -11,7 +11,7 @@ public class spawner : MonoBehaviour
 
     private float spawnInterval = 6.5f;
     private float spawnInterval2 = 7.0f;
-    private int civiliancount = 0;
+    public int civiliancount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -88,5 +88,8 @@ public class spawner : MonoBehaviour
         }
 
     }
-    
+    public void removeCivilian()
+    {
+        civiliancount--;
+    }
 }

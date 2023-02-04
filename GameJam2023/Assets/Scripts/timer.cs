@@ -7,8 +7,9 @@ using TMPro;
 
 public class timer : MonoBehaviour
 {
-    float timeleft = 120.0f;
+    float timeleft = 10.0f;
     public TextMeshProUGUI time;
+    public switchScene switchmanager;
     
     void Start()
     {
@@ -17,6 +18,11 @@ public class timer : MonoBehaviour
 
     void Update()
     {
+        if (timeleft < 0)
+        {
+            gameover();
+        }
+
         StartCoroutine(updateTime());
     }
 
@@ -28,15 +34,15 @@ public class timer : MonoBehaviour
     private IEnumerator updateTime()
     {
         timeleft -= Time.deltaTime;
-        if (timeleft < 0)
-        {
-            GameOver();
-        }
-
+        
         string minutes = Mathf.Floor(timeleft / 60).ToString("00");
         string seconds = Mathf.Floor(timeleft % 60).ToString("00");
 
         time.text = (string.Format("{0}:{1}", minutes, seconds));
         yield return new WaitForSeconds(1.0f);
+    }
+    void gameover()
+    {
+        SceneManager.LoadScene(sceneName: "end");
     }
 }

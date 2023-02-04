@@ -24,4 +24,5 @@ public class switchScene : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName: "main");
     }
+
 }

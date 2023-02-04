@@ -61,8 +61,6 @@ public class civilian : MonoBehaviour
 
     }
 
-    public void DestroyThisObject()
-    {
-        Destroy(gameObject);
-    }
+    
+
 }

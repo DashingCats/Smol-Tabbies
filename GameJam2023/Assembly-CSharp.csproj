@@ -57,8 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\switchScene.cs" />
+    <Compile Include="Assets\Scripts\PointsManager.cs" />
     <Compile Include="Assets\Scripts\timer.cs" />
+    <Compile Include="Assets\Scripts\points.cs" />
     <Compile Include="Assets\Scripts\civilian.cs" />
+    <Compile Include="Assets\Scripts\controller.cs" />
     <Compile Include="Assets\Scripts\spawner.cs" />
   </ItemGroup>
   <ItemGroup>

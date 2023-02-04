@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 3686226129291299833}
   - component: {fileID: 3686226129291299834}
   - component: {fileID: -272334243808807120}
-  m_Layer: 0
+  - component: {fileID: -8175573148044378481}
+  m_Layer: 6
   m_Name: Civilian
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3686226129291299830}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.172525, y: -0.4699998, z: 5.817833}
-  m_LocalScale: {x: 0.08495086, y: 0.08002032, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -134,3 +135,14 @@ CapsuleCollider:
   m_Height: 14.34
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!210 &-8175573148044378481
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3686226129291299830}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
