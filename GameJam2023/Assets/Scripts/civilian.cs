@@ -58,10 +58,11 @@ public class civilian : MonoBehaviour
 
             }
         }
+
     }
 
-    private void Awake()
+    public void DestroyThisObject()
     {
-        
+        Destroy(gameObject);
     }
 }
