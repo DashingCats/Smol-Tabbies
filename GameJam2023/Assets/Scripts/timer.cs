@@ -7,7 +7,7 @@ using TMPro;
 
 public class timer : MonoBehaviour
 {
-    float timeleft = 10.0f;
+    float timeleft = 120.0f;
     public TextMeshProUGUI time;
     public switchScene switchmanager;
     
