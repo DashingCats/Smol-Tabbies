@@ -6,21 +6,26 @@ using UnityEngine.SceneManagement;
 
 public class switchScene : MonoBehaviour
 {
-    public GameObject button;
+    public Button button;
     // Start is called before the first frame update
     void Start()
     {
-        Button btn = button.GetComponent<Button>();
-        btn.onClick.AddListener(changeScene);
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {/*
+        Button btn = button.GetComponent<Button>();
+        if (btn != null)
+        {
 
+            btn.onClick.AddListener(changeScene);
+        }
+        else
+            return;*/
     }
 
-    void changeScene()
+    public void changeScene()
     {
         SceneManager.LoadScene(sceneName: "main");
     }
