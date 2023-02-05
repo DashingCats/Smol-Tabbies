@@ -62,9 +62,10 @@
     <Compile Include="Assets\Scripts\points.cs" />
     <Compile Include="Assets\Scripts\civilian.cs" />
     <Compile Include="Assets\Scripts\controller.cs" />
-    <Compile Include="Assets\CityLerp.cs" />
-    <Compile Include="Assets\Scripts\spawner.cs" />
     <Compile Include="Assets\Scripts\MusicController.cs" />
+    <Compile Include="Assets\Scripts\CityLerp.cs" />
+    <Compile Include="Assets\Scripts\spawner.cs" />
+    <Compile Include="Assets\CityLerp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
