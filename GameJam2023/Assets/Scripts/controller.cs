@@ -8,6 +8,9 @@ public class controller : MonoBehaviour
     private RaycastHit hit; // What we $$anonymous$$t
     public points pmanager;
     public spawner smanager;
+    public AudioSource wilhelmSound;
+    public AudioSource scream1Sound;
+    public AudioSource scream2Sound;
 
     void Update()
     {
@@ -17,8 +20,26 @@ public class controller : MonoBehaviour
             pmanager.addpoints(+100);
             smanager.removeCivilian();
             Destroy(hit.collider.gameObject); // Destroy what we hit
+            soundPlay();
         }
     }
 
+    private void soundPlay() 
+    {
+        System.Random r = new System.Random();
+        int rSound = r.Next(3);
+        if (rSound == 0) 
+        {
+            wilhelmSound.Play();
+        }
+        else if (rSound == 1)
+        {
+            scream1Sound.Play();
+        }
+        else if (rSound == 2)
+        {
+            scream2Sound.Play();
+        }
+    }
 }
 
